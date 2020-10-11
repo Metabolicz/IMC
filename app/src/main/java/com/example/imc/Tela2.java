@@ -53,6 +53,9 @@ public class Tela2 extends AppCompatActivity {
         }
     }
     public void voltar(View view){
+        Intent it = new Intent(getBaseContext(),MainActivity.class);
+        it.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(it);
         finish();
     }
 }

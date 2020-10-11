@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
     public void button(View view) {
         Intent it = new Intent(getBaseContext(),Tela2.class);
         EditText nome = findViewById(R.id.edit1);
